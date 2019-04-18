@@ -9,6 +9,7 @@ typeof是一个获取变量或者表达式的类型的操作符（不是函数�
 3.[[3,2,1].reduce(Math.pow),[].reduce(Math.pow)]
 
 reduce方法接收一个函数作为累加器，数组中的每个值从左到右开始缩减，最终计算为一个值。 reduce() 对于空数组是不会执行回调函数的，所以报错。[3,2,1].reduce(Math.pow)最终结果为9。
+
 4.var val = 'value';console.info('Value id '+(val === 'value')?'Something':'Nothing');
 
 字符串拼接的优先级最高，所以'Value id '+(val === 'value')这一部分的结果是Value id true转化为布尔值是true所以输出为something
