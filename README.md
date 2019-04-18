@@ -1,17 +1,19 @@
 # Javascript-
-1. ["1","2","3"].map(parseInt)
+1.["1","2","3"].map(parseInt)
 
 Array.map(function(value,index,arry1){}) 可使用最多三个参数来声明回调函数，第一个是数组的值，第二个是参数，array1是包含该元素的数组对象。parseInt(string,radix)前一个参数是字符串，后一个参数是要解析的数字的基数，该值介于2~36之间。小于2或者大于36，返回NaN
-2. [typeof null, null instanceof Object]
+2.[typeof null, null instanceof Object]
 
 typeof是一个获取变量或者表达式的类型的操作符（不是函数），null是特殊的object类型的值，所以typeof是Object，这里注意typeof返回的是字符串，instanceof表示某个变量是否是某个对象的实例，返回false
-3. [[3,2,1].reduce(Math.pow),[].reduce(Math.pow)]
+
+3.[[3,2,1].reduce(Math.pow),[].reduce(Math.pow)]
 
 reduce方法接收一个函数作为累加器，数组中的每个值从左到右开始缩减，最终计算为一个值。 reduce() 对于空数组是不会执行回调函数的，所以报错。[3,2,1].reduce(Math.pow)最终结果为9。
-4. var val = 'value';console.info('Value id '+(val === 'value')?'Something':'Nothing');
+4.var val = 'value';console.info('Value id '+(val === 'value')?'Something':'Nothing');
 
 字符串拼接的优先级最高，所以'Value id '+(val === 'value')这一部分的结果是Value id true转化为布尔值是true所以输出为something
-5. 
+
+5.
 ```var name = 'World';
 (function(){
 　　if(typeof name === 'undefined'){
@@ -24,6 +26,7 @@ reduce方法接收一个函数作为累加器，数组中的每个值从左到�
 ```
 理论上根据JS的作用域链，在函数中找不到变量，回去上一级找，但是在这个例子中if语句中对name进行了声明，这个
 声明被提升，外部赋值被忽略，最终输出Goodbye Jack
+
 6. 
 ```var START = END -100;
 var count = 0;
